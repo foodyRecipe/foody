@@ -36,7 +36,7 @@
 
 ## :dart: About ##
 
-Foody is a food recipe app that allow user to search for food of there choice and see how instruction on how to make the food 🚀
+Foody is a food recipe app that allow user to search for food of there choice and see instruction on how to make the food 🚀
 
 ## :sparkles: Features ##
 
