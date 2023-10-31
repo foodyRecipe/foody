@@ -8,7 +8,7 @@ export const Stacks = createNativeStackNavigator<RootStack>()
 
 const Stack = () => {
   return (
-    <Stacks.Navigator>
+    <Stacks.Navigator initialRouteName='Welcome'>
       <Stacks.Screen name="Welcome" component={Welcome}/>
     </Stacks.Navigator>
   )
