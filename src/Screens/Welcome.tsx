@@ -10,7 +10,7 @@ const Welcome = ({navigation}: WelcomeStack) => {
     navigation.setOptions({
       headerShown: false
     })
-    // setTimeout(() => )
+    setTimeout(() => navigation.navigate("Home"), 2500)
   },[])
 
   return (
