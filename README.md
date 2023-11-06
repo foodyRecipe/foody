@@ -27,7 +27,7 @@
 <!-- Status -->
 
 <!-- <h4 align="center"> 
-	🚧  Foodys 🚀 Under construction...  🚧
+	🚧  Foody 🚀 Under construction...  🚧
 </h4> 
 
 <hr> -->
