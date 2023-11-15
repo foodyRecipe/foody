@@ -1,10 +1,11 @@
 import React, { useEffect } from "react"
-import { View, Text, ScrollView, SafeAreaView, Image, TextInput } from "react-native"
+import { View, Text, ScrollView, SafeAreaView, Image, TextInput, TouchableOpacity } from "react-native"
 import { HomeStack } from "../types/stackParam"
 import { styles } from "../theme"
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen"
-import {BellIcon} from "react-native-heroicons/outline"
+import { BellIcon, MagnifyingGlassIcon } from "react-native-heroicons/outline"
 import { StatusBar } from "expo-status-bar"
+import Categories from "../components/Categories"
 
 const Home = ({navigation}: HomeStack) => {
 
@@ -25,7 +26,7 @@ const Home = ({navigation}: HomeStack) => {
           <BellIcon size={hp(4)} color="gray"/>
         </SafeAreaView>
         {/* greetings and punchline */}
-        <View className="gap-y-4 mx-4 pt-4">
+        <View className="gap-y-3 mx-4 pt-4">
           <Text className="text-neutral-600 tracking-wider" style={{fontSize: hp(2)}}>Hey Jamiu</Text>
           <View>
             <Text className="text-neutral-600 font-semibold tracking-widest" style={{ fontSize: hp(4)}}>Make your own food,</Text>
@@ -37,13 +38,20 @@ const Home = ({navigation}: HomeStack) => {
           </View>
         </View>
         {/* search bar */}
-        <View className="flex-row items-center mx-4 rounded-full bg-black/5 p-[6px]">
+        <View className="flex-row items-center mx-4 mt-4 rounded-full bg-black/5 p-[7px]">
           <TextInput
             placeholder="Search any recipe"
             placeholderTextColor={"gray"}
             style={{fontSize: hp(2)}}
             className="flex-1 text-base pl-3 tracking-wider"
           />
+          <TouchableOpacity activeOpacity={0.6} className="rounded-full bg-white p-3">
+            <MagnifyingGlassIcon size={hp(3)} color="gray" />
+          </TouchableOpacity>
+        </View>
+        {/* categories */}
+        <View>
+          <Categories/>
         </View>
       </ScrollView>
     </View>
